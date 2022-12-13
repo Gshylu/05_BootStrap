@@ -1,0 +1,66 @@
+<Modals>
+The Modal component is a dialog box/popup window that is displayed on top of the current page:
+
+
+
+The "Trigger" part:
+
+To trigger the modal window, you need to use a button or a link.
+Then include the two data-* attributes:
+data-toggle="modal" opens the modal window
+data-target="#myModal" points to the id of the modal
+
+The "Modal" part:
+
+>>The parent <div> of the modal must have an ID that is the same as the value of the data-target attribute used to trigger the modal ("myModal").
+>>The .modal class identifies the content of <div> as a modal and brings focus to it.
+>>The .fade class adds a transition effect which fades the modal in and out. Remove this class if you do not want this effect.
+>>The attribute role="dialog" improves accessibility for people using screen readers.
+>>The .modal-dialog class sets the proper width and margin of the modal.
+
+The "Modal content" part:
+>>The <div> with class="modal-content" styles the modal (border, background-color, etc.). Inside this <div>, add the modal's header, body, and footer.
+>>The .modal-header class is used to define the style for the header of the modal. The <button> inside the header has a data-dismiss="modal" attribute
+     which closes the modal if you click on it. The .close class styles the close button, and the .modal-title class styles the header with a proper line-height.
+>>The .modal-body class is used to define the style for the body of the modal. Add any HTML markup here; paragraphs, images, videos, etc.
+>>The .modal-footer class is used to define the style for the footer of the modal. Note that this area is right aligned by default.
+
+
+
+<Add animation class="modal fade">
+Use the .fade class to add a fading effect when opening and closing the modal:>
+
+
+<Modal Size class="modal-dialog modal-sm" class="modal-dialog modal-lg" class="modal-dialog modal-xl">
+Change the size of the modal by adding the .modal-sm class for small modals (max-width 300px), .modal-lg class for large modals  (max-width 800px), or .modal-xl for extra large modals  (max-width 1140px). Default is 500px max-width.
+
+Add the size class to the <div> element with class .modal-dialog:>
+
+<Fullscreen Modals  class="modal-dialog modal-fullscreen">
+    If you want the modal to span the whole width and height of the page, use the .modal-fullscreen class:
+
+
+
+
+    
+<Responsive Fullscreen Modals >
+    You can also control when the modal should be in fullscreen, with the .modal-fullscreen-*-* classes:>
+
+         Class	                   Description	
+.modal-fullscreen-sm-down	Fullscreen below 576px	
+.modal-fullscreen-md-down	Fullscreen below 768px	
+.modal-fullscreen-lg-down	Fullscreen below 992px	
+.modal-fullscreen-xl-down	Fullscreen below 1200px	
+.modal-fullscreen-xxl-down	Fullscreen below 1400px
+
+<Centered Modal class="modal-dialog modal-dialog-centered">
+Center the modal vertically and horizontally within the page, with the .modal-dialog-centered class:
+
+Example>
+
+
+<Scrolling Modal class="modal-dialog">
+When you have a lot of content inside the modal, a scrollbar is added to the page. See the examples below to understand it:
+
+However, it is possible to only scroll inside the modal, instead of the page itself, by adding .modal-dialog-scrollable to .modal-dialog:
+(<div class="modal-dialog modal-dialog-scrollable"></div>)

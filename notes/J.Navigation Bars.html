@@ -1,0 +1,60 @@
+<Navigation Bars>
+A navigation bar is a navigation header that is placed at the top of the page:
+
+
+<Basic Navbar>
+With Bootstrap, a navigation bar can extend or collapse, depending on the screen size.
+
+A standard navigation bar is created with the .navbar class, followed by a responsive collapsing class: .navbar-expand-xxl|xl|lg|md|sm (stacks the navbar vertically on xxlarge, extra large, large, medium or small screens).
+
+To add links inside the navbar, use either an <ul> element (or a <div>) with class="navbar-nav". Then add <li> elements with a .nav-item class followed by an <a> element with a .nav-link class:
+
+<Vertical Navbar>
+Remove the .navbar-expand-* class to create a navigation bar that will always be vertical:
+
+<Centered Navbar class="navbar navbar-expand-sm bg-light justify-content-center">
+    Add the .justify-content-center class to center the navigation bar:
+
+<Colored Navbar>
+    Use any of the .bg-color classes to change the background color of the navbar (.bg-primary, .bg-success, .bg-info, .bg-warning, .bg-danger, .bg-secondary, .bg-dark and .bg-light)
+    Tip: Add a white text color to all links in the navbar with the .navbar-dark class, or use the .navbar-light class to add a black text color.
+
+<Active/disabled state  class="navbar navbar-expand-sm bg-light navbar-light">
+     Add the .active class to an  element to highlight the current link, or the .disabled class to indicate that the link is un-clickable.>
+
+<Brand & Logo class="navbar-brand">
+The .navbar-brand class is used to highlight the brand/logo/project name of your page:>
+
+When using the .navbar-brand class with images, Bootstrap 5 will automatically style the image to fit the navbar vertically.
+(   <img src="logo.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> )
+
+
+<Navbar Text class="navbar-text">
+Use the .navbar-text class to vertical align any elements inside the navbar that are not links (ensures proper padding and text color).
+
+
+ <collapsible navigation bar>
+    use a button with class="navbar-toggler", data-bs-toggle="collapse" and data-bs-target="#thetarget". Then wrap the navbar content (links, etc) inside a <div> element with class="collapse navbar-collapse", followed by an id that matches the data-bs-target of the button: "thetarget"
+
+<Tip: You can also remove the .navbar-expand-md class to ALWAYS hide navbar links and display the toggler button.
+
+></Tip:>
+<Navbar With Dropdown class="dropdown-menu">
+    Navbars can also hold dropdown menus:
+
+<Navbar Forms and Buttons>
+    You can also include forms inside the navigation bar:
+
+<Fixed Navigation Bar class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    The navigation bar can also be fixed at the top or at the bottom of the page.
+
+    A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.
+    
+    The .fixed-top class makes the navigation bar fixed at the top:
+    
+    
+    >>Use the .fixed-bottom class to make the navbar stay at the bottom of the page:
+
+<sticky-top  class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+ class to make the navbar fixed/stay at the top of the page when you scroll past it.
+  Note: This class does not work in IE11 and earlier (will treat it as position:relative).>
